@@ -40,7 +40,7 @@ public class InventorySystem{
 
 //take an input amount from the user , you have to divide this amount into higher denominations as possible of 2000, 500, and 100. 
 // try to take the least number of notes possible
-
+/* 
 
 import java.util.Scanner;
 
@@ -67,7 +67,29 @@ public class InventorySystem{
 
     }
 }
-
+*/
 
 // write a progeam to print sum of numbers taken by user . NOTE : you have to take input till user enters 0 and then give the sum of all numbers
 // 
+
+import java.util.Scanner;
+
+public class InventorySystem{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int sum =0;
+        int num;
+        System.out.println("Enter numbers (enter 0 to stop):");
+        while(true){
+            num = sc.nextInt();
+            if(num ==0){
+                break;  
+            }
+            sum = sum + num;
+    }
+    System.out.println("Sum of numbers = "+sum);
+    sc.close();
+}
+}
+
+     
