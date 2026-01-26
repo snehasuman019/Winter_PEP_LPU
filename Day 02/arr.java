@@ -75,7 +75,7 @@ public class arr {
     }
 }
     */
-
+/* /
 // Passing arrays to methods
 public class arr{
     public static void main(String[] args){
@@ -89,3 +89,20 @@ public class arr{
         System.out.println("The sum is: " + sum);
     }
 }
+// Sum method is called with arr as an argument . inside the sum() method, all array elements are added using a for loop.
+*/
+
+// Returning arrays from methods
+class arr{
+   
+        public static void main(String args[]){
+            int arr[] = m1();
+            for (int i=0; i < arr.length; i++){
+                System.out.println(arr[i] + " ");
+            }
+        }
+        public static int[] m1(){
+            return new int[] {10,20,30,40,50};
+        }
+    }
+// The m1() method returns an array of integers. In the main method, we call m1() and store the returned array in arr. We then print the elements of the array using a for loop.
