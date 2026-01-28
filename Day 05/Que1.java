@@ -14,7 +14,7 @@
 //   output : 12
 
 import java.util.*;
-public class Prac {
+public class Que1 {
     public static int convert(String s){
 
         // Scanner sc = new Scanner(System.in);
