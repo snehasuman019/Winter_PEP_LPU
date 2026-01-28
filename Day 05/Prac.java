@@ -13,40 +13,51 @@
 //   sample : 12@1244
 //   output : 12
 
-
+import java.util.*;
 public class Prac {
-    public static void main(String[] args){
-        String s = "   -42";
+    public static int convert(String s){
+
+        // Scanner sc = new Scanner(System.in);
+        // s = sc.nextLine();
+
+        if(s==null || s.length()==0){
+            return 0;
+        }
         int i = 0;
         int n = s.length();
-        // ignore leading spaces
-        while(i < n && s.charAt(i) == ' '){
-            i++;
-        }
-        // check for sign
         int sign = 1;
-        if(i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')){
-            if(s.charAt(i) == '-'){
-                sign = -1;
-            }
+        while(i<n && s.charAt(i) == ' '){
             i++;
         }
-        // read digits
+        if(i==n) return 0;
+        if(s.charAt(i) == '+' || s.charAt(i) == '-'){
+            sign = (s.charAt(i) == '-') ? -1 : 1;
+            i++;
+        }
         long result = 0;
-        while(i < n && Character.isDigit(s.charAt(i))){
+        while(i<n && Character.isDigit(s.charAt(i))){
             int digit = s.charAt(i) - '0';
             result = result * 10 + digit;
-            // check for overflow
             if(sign == 1 && result > Integer.MAX_VALUE){
-                result = Integer.MAX_VALUE;
-                break;
-            }else if(sign == -1 && -result < Integer.MIN_VALUE){
-                result = - (long)Integer.MIN_VALUE;
-                break;
+                return Integer.MAX_VALUE;
+            }
+            if(sign == -1 && -result < Integer.MIN_VALUE){
+                return Integer.MIN_VALUE;
             }
             i++;
         }
-        result = result * sign;
-        System.out.println((int)result);
+        return (int)(sign * result);
+
+        // for(int i=0;i<s.length();i++){
+        //     char ch = s.charAt(i);
+        // }
     }
+    public static void main(String[] args){
+        System.out.println(convert("Hello123"));
+        System.out.println(convert("12@Hello34511"));
+        System.out.println(convert("12@1244"));
+        System.out.println(convert("   -42"));
+        
+    }
+
 }
