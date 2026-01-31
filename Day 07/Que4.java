@@ -23,8 +23,10 @@ public class Que4 {
 
     }
     public static void main(String[] args){
-        int[] arr = {7,4,2,6,1,10};
-        int k =3;
+        // int[] arr = {7,4,2,6,1,10};
+        int[] arr = {4,9,-1,1,7,15};
+        int k = 2;
+        // int k =3;
         System.out.println(countSubarrays(arr, k));
     }
 }
