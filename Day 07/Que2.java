@@ -36,38 +36,3 @@ public class Que2 {
 
 
 
-
-/* /
-import java.util.HashMap;
-
-public class SubarraySum {
-    public static void main(String[] args) {
-        int[] arr = {6, -2, -4, 10, -1, 5};
-        int k = 7;
-        System.out.println("Total subarrays: " + countSubarrays(arr, k));
-    }
-
-    public static int countSubarrays(int[] arr, int k) {
-        int count = 0;
-        int currentSum = 0;
-        HashMap<Integer, Integer> map = new HashMap<>();
-        
-        // Base case: A sum of 0 has been seen once (empty prefix)
-        map.put(0, 1);
-
-        for (int num : arr) {
-            currentSum += num;
-
-            // Check if (currentSum - k) exists in the map
-            if (map.containsKey(currentSum - k)) {
-                count += map.get(currentSum - k);
-            }
-
-            // Update the map with the current sum
-            map.put(currentSum, map.getOrDefault(currentSum, 0) + 1);
-        }
-
-        return count;
-    }
-}
-    */

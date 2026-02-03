@@ -5,7 +5,8 @@ public class ContainerWithWater3 {
         int maxarea = 0;
         int l = 0, r =height.length-1;
         while(l<r){
-            int area = Math.min(height[l],height[r])*(r-l);            maxarea = maxarea<area ? area:maxarea;
+            int area = Math.min(height[l],height[r])*(r-l);           
+            maxarea = maxarea<area ? area:maxarea;
             if(height[l]<height[r])
                 l++;
             else

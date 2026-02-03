@@ -18,12 +18,10 @@ public class Que9 {
                 i++;
             } else {
                 j--;
-            }
-
-            
+            }            
         }
         System.out.println("False");
-        
+
 
         
     }

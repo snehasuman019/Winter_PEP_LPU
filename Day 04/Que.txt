@@ -1,0 +1,16 @@
+// package Day 04;
+
+// reverse each word of a string
+// wap to count vowels and consonants in a given string. string might contain numbers, characters special characters and spaces . for ex : email id ->
+// check for the palindrome and ignore the cases(lowercase and upppercase) 
+// isomorphic strings
+// you have to compress the string 
+// suppose aaabbcdd -> output -> a3b2c1d2
+// minimum substring window that contains all characters of another string.
+// WAP to find the largest common substring among all the string in an array
+//WAP to find longest substring without repeating characters in a given string.
+// you are given with a array of strings (create an array). join the 3 strings in the hash symbol(#) and print it.
+// find all the possible permutations of a string.
+// take input of a string and a remove all the adjacent duplicate characters from the string and print the result.
+
+
