@@ -1,0 +1,11 @@
+TREES
+1. Binary Tree 
+    - Full Binary Tree –> every node has either 0 or 2 children.
+    - Complete Binary Tree – all levels are fully filled except possibly the last, which is filled from left to  
+                             right.
+    - Balanced Binary Tree – height difference between left and right subtrees of every node is minimal
+2. BST (binary search tree)
+    - elements at left -> less than the root
+    - elements at right -> greater than the root
+3. DFS Traversals
+4. 
